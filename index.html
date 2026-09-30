@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10283f">
+    <title>DIACORE Dialysis Center HMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="dc-header">
+        <a class="dc-brand" href="#top" aria-label="DIACORE Dialysis Center HMS home">
+            <img src="logo.png" alt="DIACORE logo">
+            <span>DIACORE <small>Dialysis Center HMS</small></span>
+        </a>
+        <nav class="dc-nav" aria-label="Main navigation">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About Dialysis</a>
+            <a href="#centers">Find Center</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a class="dc-header-action" href="#account">Login <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="top" class="dc-shell">
+        <section class="dashboard-section" id="home" aria-labelledby="home-title">
+            <div class="dashboard-heading">
+                <div>
+                    <p class="dc-eyebrow">DIACORE DIALYSIS CENTER HMS</p>
+                    <h1 id="home-title">Welcome to DiaCore, where care meets the core</h1>
+                    <p class="dashboard-subtitle">Supporting healthier lives, today and more.<br>Your trusted guide for dialysis and care,<br>Helping every patient feel supported and prepared.</p>
+                </div>
+            </div>
+            <div class="dashboard-grid">
+                <section class="chart-panel" aria-labelledby="chart-title">
+                    <div class="panel-heading">
+                        <div><p class="panel-kicker">PATIENT CASES</p><h2 id="chart-title">Dialysis patients by case</h2></div>
+                        <div class="total-patients"><strong>100</strong><span>total patients</span></div>
+                    </div>
+                    <div class="bar-chart" role="img" aria-label="Sample bar chart of 100 dialysis patients by primary case: diabetic kidney disease 42, hypertensive kidney disease 28, chronic glomerulonephritis 18, and other causes 12.">
+                        <div class="chart-row"><div class="chart-label"><span>Diabetic kidney disease</span><strong>42</strong></div><div class="bar-track"><span class="bar-fill" style="--bar-value: 42%"></span></div></div>
+                        <div class="chart-row"><div class="chart-label"><span>Hypertensive kidney disease</span><strong>28</strong></div><div class="bar-track"><span class="bar-fill teal-bar" style="--bar-value: 28%"></span></div></div>
+                        <div class="chart-row"><div class="chart-label"><span>Chronic glomerulonephritis</span><strong>18</strong></div><div class="bar-track"><span class="bar-fill light-bar" style="--bar-value: 18%"></span></div></div>
+                        <div class="chart-row"><div class="chart-label"><span>Other causes</span><strong>12</strong></div><div class="bar-track"><span class="bar-fill muted-bar" style="--bar-value: 12%"></span></div></div>
+                    </div>
+                    <p class="chart-footnote">Illustrative sample data only. Replace with verified center records.</p>
+                </section>
+                <aside class="dashboard-aside">
+                    <div class="aside-icon" aria-hidden="true">+</div>
+                    <p class="panel-kicker">CARE AT A GLANCE</p>
+                    <h2>Every patient<br>counts.</h2>
+                    <p>This dashboard preview uses a sample of 100 dialysis patients to demonstrate case reporting.</p>
+                    <a href="#about">About dialysis <span aria-hidden="true">↗</span></a>
+                </aside>
+            </div>
+        </section>
+
+        <section class="locations-section" id="centers" aria-labelledby="locations-title">
+            <div class="section-title-row">
+                <div><p class="dc-eyebrow">FIND A DIALYSIS CENTER</p><h2 id="locations-title">Care near you.</h2></div>
+                <label class="location-search"><span aria-hidden="true">⌕</span><span class="visually-hidden">Search locations</span><input id="location-query" type="search" placeholder="Search Marikina or Sumulong"></label>
+            </div>
+            <div class="location-list" id="location-list">
+                <article class="location-item" data-location="marikina">
+                    <span class="location-index">01</span><div><p class="panel-kicker">DIALYSIS CENTER</p><h3>Marikina</h3></div><span class="location-arrow" aria-hidden="true">↗</span>
+                </article>
+                <article class="location-item" data-location="sumulong">
+                    <span class="location-index">02</span><div><p class="panel-kicker">DIALYSIS CENTER</p><h3>Sumulong</h3></div><span class="location-arrow" aria-hidden="true">↗</span>
+                </article>
+            </div>
+            <p class="location-empty" id="location-empty" hidden>No matching location. Search Marikina or Sumulong.</p>
+        </section>
+
+        <section class="about-section" id="about" aria-labelledby="about-title">
+            <div class="about-heading"><p class="dc-eyebrow">ABOUT DIALYSIS</p><h2 id="about-title">Supporting your<br>kidney care.</h2></div>
+            <div class="about-copy">
+                <p>Dialysis is a treatment that helps remove waste and extra fluid from the blood when the kidneys can no longer do so effectively. It supports the body's balance of fluids and minerals.</p>
+                <p>Hemodialysis filters blood through a machine, while peritoneal dialysis uses the lining of the abdomen. A nephrologist helps determine the appropriate care plan for each patient.</p>
+                <span class="medical-note">For general information only. Follow your healthcare provider's advice for personal care.</span>
+            </div>
+        </section>
+
+        <section class="account-section" id="account" aria-labelledby="account-title">
+            <div class="account-copy">
+                <p class="dc-eyebrow">LOCAL DEMO ACCOUNT ACCESS</p>
+                <h2 id="account-title">Welcome to<br>DIACORE.</h2>
+                <p>Choose your account type to continue.</p>
+                <div class="account-info"><span class="account-info-mark" aria-hidden="true">i</span><span>Patients create an account before login. This demo includes 30 local admin accounts.</span></div>
+            </div>
+            <div class="auth-panel">
+                <div class="role-toggle" role="group" aria-label="Choose account type">
+                    <button class="role-button active" id="patient-role" type="button" aria-pressed="true">Patient</button>
+                    <button class="role-button" id="admin-role" type="button" aria-pressed="false">Admin</button>
+                </div>
+                <div class="auth-tabs" id="patient-tabs" role="tablist" aria-label="Patient account actions">
+                    <button class="auth-tab active" id="patient-signup-tab" type="button" aria-selected="true">Create account</button>
+                    <button class="auth-tab" id="patient-login-tab" type="button" aria-selected="false">Login</button>
+                </div>
+                <div class="auth-tabs admin-tabs" id="admin-tabs" role="tablist" aria-label="Admin account actions" hidden>
+                    <span class="admin-access-label">ADMIN LOGIN · 30 PROVISIONED ACCOUNTS</span>
+                </div>
+                <form class="auth-form" id="patient-signup-form">
+                    <h3>Create patient account</h3><p class="form-intro">Register first to access the patient portal.</p>
+                    <label>Full name<input type="text" name="patient-name" placeholder="Your full name" autocomplete="name" required></label>
+                    <label>Email address<input type="email" name="patient-email" placeholder="you@example.com" autocomplete="email" required></label>
+                    <label>Create password<span class="password-input-wrap"><input id="patient-password" type="password" name="patient-password" placeholder="At least 8 characters" minlength="8" autocomplete="new-password" required><button class="password-toggle" type="button" data-password-toggle aria-controls="patient-password" aria-label="Show password" aria-pressed="false">Show</button></span></label>
+                    <button class="auth-submit" type="submit">Create account <span aria-hidden="true">↗</span></button>
+                    <p class="form-message" aria-live="polite"></p>
+                </form>
+                <form class="auth-form" id="patient-login-form" hidden>
+                    <h3>Patient login</h3><p class="form-intro">Login is available after patient registration.</p>
+                    <label>Email address<input type="email" name="patient-login-email" placeholder="you@example.com" autocomplete="email" required></label>
+                    <label>Password<span class="password-input-wrap"><input id="patient-login-password" type="password" name="patient-login-password" placeholder="Enter your password" autocomplete="current-password" required><button class="password-toggle" type="button" data-password-toggle aria-controls="patient-login-password" aria-label="Show password" aria-pressed="false">Show</button></span></label>
+                    <button class="auth-submit" type="submit">Login as patient <span aria-hidden="true">↗</span></button>
+                    <p class="form-message" aria-live="polite"></p>
+                </form>
+                <form class="auth-form" id="admin-login-form" hidden>
+                    <h3>Admin login</h3>
+                    <p class="admin-access-label">30 DEFAULT ADMIN DEMO ACCOUNTS</p>
+                    <p class="form-intro">Email: admin1@diacore.com–admin30@diacore.com<br>Passwords: adminone1–adminthirty30 (matching number).</p>
+                    <label>Admin email<input type="email" name="admin-email" placeholder="admin1@diacore.com" autocomplete="username" required></label>
+                    <label>Password<span class="password-input-wrap"><input id="admin-password" type="password" name="admin-password" placeholder="Enter your password" autocomplete="current-password" required><button class="password-toggle" type="button" data-password-toggle aria-controls="admin-password" aria-label="Show password" aria-pressed="false">Show</button></span></label>
+                    <button class="auth-submit" type="submit">Login <span aria-hidden="true">↗</span></button>
+                    <p class="form-message" aria-live="polite"></p>
+                </form>
+                <p class="demo-disclaimer">Local demo only. Accounts, passwords and records are stored in this browser and are not secure. Do not enter real medical, personal or payment information. No payment is processed.</p>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact" aria-label="Contact number">
+            <p class="dc-eyebrow">CONTACT</p>
+            <div class="contact-details">
+                <a href="tel:09121231234"><span>PHONE</span><strong>09121231234</strong></a>
+                <a href="mailto:diacore@gmail.com"><span>GMAIL</span><strong>diacore@gmail.com</strong></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="dc-footer">
+        <span>DIACORE DIALYSIS CENTER HMS</span><span>© 2026</span>
+    </footer>
+</body>
+</html>

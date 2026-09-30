@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#10283f">
+	<title>Patient Portal | DIACORE Dialysis Center HMS</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body data-page="patient">
+	<header class="portal-header">
+		<button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="portal-menu">
+			<span class="hamburger-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+		</button>
+		<a class="portal-brand" href="index.html" aria-label="DIACORE home">
+			<img src="logo.png" alt="">
+			<span>DIACORE <small>PATIENT PORTAL</small></span>
+		</a>
+		<div class="portal-header-actions"><span id="portal-user"></span><button id="logout-button" class="logout-button" type="button">Logout</button></div>
+	</header>
+	<aside class="portal-menu" id="portal-menu" aria-label="Patient navigation">
+		<div class="menu-heading"><span>PATIENT MENU</span><button id="menu-close" type="button" aria-label="Close navigation menu">×</button></div>
+		<nav class="portal-nav">
+			<a href="#announcements" data-view="announcements">Announcement</a>
+			<a href="#profile" data-view="profile">Profile</a>
+			<a href="#notes" data-view="notes">Nurses notes</a>
+			<a href="#schedule" data-view="schedule">Schedule</a>
+			<a href="#billing" data-view="billing">Billing</a>
+			<a href="#notifications" data-view="notifications">Notification</a>
+			<a href="#messages" data-view="messages">Message</a>
+		</nav>
+		<p class="menu-footnote">DIACORE DIALYSIS CENTER HMS</p>
+	</aside>
+	<main class="portal-main">
+		<div class="portal-title-row"><div><p class="portal-kicker">DIACORE DIALYSIS CENTER HMS</p><h1 id="view-title">Announcement</h1></div><span class="demo-chip">LOCAL DEMO</span></div>
+		<div id="portal-content" class="portal-content" aria-live="polite"></div>
+	</main>
+	<footer class="portal-footer"><span>DIACORE DIALYSIS CENTER HMS</span><span>Your portal shows only the account signed in here.</span></footer>
+</body>
+</html>
